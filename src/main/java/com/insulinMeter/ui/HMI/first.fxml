@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <SplitPane dividerPositions="0.14321608040201006" layoutX="1.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <ProgressBar fx:id="progressBattery" layoutX="9.0" layoutY="13.0" prefHeight="19.0" prefWidth="64.0" progress="0.0" />
+                  <ProgressIndicator fx:id="piBatteryLevel" layoutX="19.0" layoutY="31.0" prefHeight="19.0" prefWidth="44.0" progress="0.9" />
+                  <TextField fx:id="Timer" layoutX="515.0" layoutY="10.0" prefHeight="25.0" prefWidth="83.0" />
+                  <Button fx:id="batteryRefil" layoutX="73.0" layoutY="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="26.0" text="+" />
+                  <TextField fx:id="Title" alignment="CENTER" editable="false" layoutX="104.0" layoutY="-4.0" prefHeight="63.0" prefWidth="408.0" text="INSULIN PUMP SIMULATOR">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <LineChart fx:id="linePlotBSL" prefHeight="338.0" prefWidth="461.0" title="Blood Sugar Level">
+                    <xAxis>
+                      <NumberAxis fx:id="linePlotBSLxAxis" label="Time" side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis fx:id="linePlotBSLyAxis" label="Blood Sugar Level in mg/dL" prefHeight="208.0" prefWidth="49.0" side="LEFT" upperBound="200.0" />
+                    </yAxis>
+                  </LineChart>
+                  <Label fx:id="insulinInject" layoutX="493.0" layoutY="185.0" text="Insulin Injected" />
+                  <TextField fx:id="insulinInjectedDisplay" layoutX="492.0" layoutY="212.0" prefHeight="19.0" prefWidth="83.0" />
+                  <Label fx:id="glucagonInject" layoutX="493.0" layoutY="249.0" prefHeight="17.0" prefWidth="96.0" text="Glucagon Injected" />
+                  <TextField fx:id="glucagonInjectedDisplay" layoutX="491.0" layoutY="278.0" prefHeight="25.0" prefWidth="83.0" />
+                  <Label fx:id="currentBSL" layoutX="491.0" layoutY="52.0" prefHeight="19.0" prefWidth="74.0" text="Current BSL" />
+                  <TextField fx:id="currentBSLDisplay" layoutX="491.0" layoutY="80.0" prefHeight="19.0" prefWidth="83.0" />
+                  <Label fx:id="previousBSL" layoutX="493.0" layoutY="116.0" prefHeight="17.0" prefWidth="80.0" text="Previous BSL" />
+                  <TextField fx:id="previousBSLDisplay" layoutX="491.0" layoutY="144.0" prefHeight="19.0" prefWidth="83.0" />
+                  <Button fx:id="BackToScreen" layoutX="552.0" layoutY="312.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="44.0" text="Back" />
+                  <Button fx:id="GoToSettingScreen" layoutX="533.0" layoutY="2.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="64.0" text="Settings" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

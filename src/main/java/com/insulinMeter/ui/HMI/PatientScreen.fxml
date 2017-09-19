@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="362.0"
+	prefWidth="590.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+		<AnchorPane layoutX="-1.0" layoutY="-1.0" minHeight="0.0"
+			minWidth="0.0" prefHeight="73.0" prefWidth="590.0">
+			<children>
+				<ProgressBar fx:id="progressBattery" layoutX="9.0"
+					layoutY="10.0" prefHeight="25.0" prefWidth="64.0" progress="0.0" />
+				<ProgressIndicator fx:id="piBatteryLevel" layoutX="19.0"
+					layoutY="31.0" prefHeight="19.0" prefWidth="44.0" progress="0.9" />
+				<ImageView fx:id="titleImage" fitHeight="54.0" fitWidth="413.0"
+					layoutX="102.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" />
+				<TextField fx:id="Timer" layoutX="519.0" layoutY="10.0"
+					prefHeight="25.0" prefWidth="57.0" />
+				<Button fx:id="batteryRefil" layoutX="73.0" layoutY="10.0"
+					mnemonicParsing="false" prefHeight="25.0" prefWidth="26.0" text="+" />
+				<TextField fx:id="Title" alignment="CENTER" editable="false"
+					layoutX="104.0" layoutY="-4.0" prefHeight="63.0" prefWidth="408.0"
+					text="INSULIN PUMP SIMULATOR">
+					<font>
+						<Font size="28.0" />
+					</font>
+				</TextField>
+			</children>
+		</AnchorPane>
+		<SplitPane dividerPositions="0.6695352839931153" layoutX="3.0"
+			layoutY="67.0" prefHeight="294.0" prefWidth="583.0">
+			<items>
+				<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="292.0"
+					prefWidth="404.0">
+					<children>
+						<Label fx:id="currentBSL" layoutX="14.0" layoutY="15.0"
+							prefHeight="27.0" prefWidth="100.0" text="Current BSL"
+							textAlignment="CENTER">
+							<font>
+								<Font size="18.0" />
+							</font>
+						</Label>
+						<Label fx:id="PreviousBSL" layoutX="9.0" layoutY="51.0"
+							prefHeight="27.0" prefWidth="110.0" text="Previous BSL"
+							textAlignment="CENTER">
+							<font>
+								<Font size="18.0" />
+							</font>
+						</Label>
+						<Label fx:id="InsulinInjected" layoutX="14.0" layoutY="111.0"
+							prefHeight="27.0" prefWidth="100.0" text="Insulin Injected"
+							textAlignment="CENTER">
+							<font>
+								<Font size="13.0" />
+							</font>
+						</Label>
+						<Label fx:id="InsulinBank" layoutX="14.0" layoutY="170.0"
+							prefHeight="27.0" prefWidth="100.0" text="Insulin Bank"
+							textAlignment="CENTER">
+							<font>
+								<Font size="13.0" />
+							</font>
+						</Label>
+						<Label fx:id="GlucagonBank" layoutX="198.0" layoutY="170.0"
+							prefHeight="27.0" prefWidth="100.0" text="Glucagon Bank"
+							textAlignment="CENTER">
+							<font>
+								<Font size="13.0" />
+							</font>
+						</Label>
+						<Label fx:id="GlucagonInjected" layoutX="193.0" layoutY="111.0"
+							prefHeight="27.0" prefWidth="110.0" text="Glucagon Injected"
+							textAlignment="CENTER">
+							<font>
+								<Font size="13.0" />
+							</font>
+						</Label>
+						<TextField fx:id="insulinInjectedDisplay" layoutX="102.0"
+							layoutY="112.0" prefHeight="25.0" prefWidth="86.0" />
+						<ProgressBar fx:id="insulinBankBar" layoutX="104.0"
+							layoutY="171.0" prefHeight="25.0" prefWidth="83.0" progress="0.0" />
+						<ProgressIndicator fx:id="insulinIndicate"
+							layoutX="158.0" layoutY="171.0" prefHeight="25.0" prefWidth="29.0"
+							progress="0.0" />
+						<Button fx:id="insulinAdd" layoutX="131.0" layoutY="196.0"
+							mnemonicParsing="false" prefHeight="25.0" prefWidth="29.0" text="+" />
+						<TextField fx:id="glucagonInjectedDisplay" layoutX="301.0"
+							layoutY="112.0" prefHeight="25.0" prefWidth="83.0" />
+						<ProgressBar fx:id="glucagonBankBar" layoutX="303.0"
+							layoutY="172.0" prefHeight="25.0" prefWidth="83.0" progress="0.0" />
+						<ProgressIndicator fx:id="glucagonIndicate"
+							layoutX="358.0" layoutY="172.0" prefHeight="25.0" prefWidth="29.0"
+							progress="0.0" />
+						<TextField fx:id="currentBSLDisplay" editable="false"
+							layoutX="131.0" layoutY="16.0" prefHeight="25.0" prefWidth="83.0" />
+						<TextField fx:id="previousBSLDisplay" editable="false"
+							layoutX="131.0" layoutY="52.0" prefHeight="25.0" prefWidth="83.0" />
+						<Button fx:id="glucagonAdd" layoutX="347.0" layoutY="197.0"
+							mnemonicParsing="false" prefHeight="25.0" prefWidth="29.0" text="+" />
+						<Button fx:id="BackToScreen" layoutX="14.0" layoutY="253.0"
+							mnemonicParsing="false" text="Back" />
+						<Button fx:id="injectInsulin" layoutX="99.0" layoutY="142.0"
+							mnemonicParsing="false" text="INject INsulin" />
+						<Button fx:id="injectGlucogon" layoutX="273.0" layoutY="139.0"
+							mnemonicParsing="false" text="Inject Glucogon" />
+						<ChoiceBox fx:id="modeSelectionBox" layoutX="223.0"
+							layoutY="16.0" prefHeight="25.0" prefWidth="126.0" />
+						<AnchorPane fx:id="alertPlaceHolder" layoutX="300.0"
+							layoutY="223.0" prefHeight="73.0" prefWidth="86.0" />
+					</children>
+				</AnchorPane>
+				<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="292.0"
+					prefWidth="180.0">
+					<children>
+						<Label fx:id="errorMsg" layoutX="3.0" layoutY="8.0"
+							prefHeight="34.0" prefWidth="180.0" text="  Error Messages"
+							textFill="#fc4242"  textAlignment="JUSTIFY"> 
+							<font>
+								<Font size="23.0" />
+							</font>
+						</Label>
+						<TextArea fx:id="errorDisplay" editable="false"
+							layoutX="3.0" layoutY="46.0" prefHeight="247.0" prefWidth="180.0" wrapText="true">
+							<font>
+								<Font size="18.0" />
+							</font>
+						</TextArea>
+					</children>
+				</AnchorPane>
+			</items>
+		</SplitPane>
+	</children>
+</AnchorPane>

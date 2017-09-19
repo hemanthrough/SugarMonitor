@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="SettingScreen" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="372.0" prefWidth="579.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="SettingTitle" editable="false" prefHeight="50.0" prefWidth="579.0" text="                             PATIENT DETAILS">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <Button fx:id="ExportPatientHistory" layoutX="428.0" layoutY="228.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="133.0" text="Export Patient History" />
+      <Button fx:id="closeSetting" layoutX="527.0" layoutY="339.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="44.0" text="Close" />
+      <Label fx:id="PatientNameLabel" layoutX="5.0" layoutY="69.0" prefHeight="17.0" prefWidth="44.0" text="NAME:" />
+      <Label fx:id="PatientAddressLabel" layoutX="5.0" layoutY="100.0" prefHeight="17.0" prefWidth="59.0" text="ADDRESS:" />
+      <Label fx:id="PatientEmailLabel" layoutX="5.0" layoutY="132.0" prefHeight="17.0" prefWidth="44.0" text="E-MAIL:" />
+      <Label fx:id="PatientICRLabel" layoutX="4.0" layoutY="196.0" text="ICR(Insulin to Carbohydrate ratio):" />
+      <Label fx:id="PatientWeightLabel" layoutX="4.0" layoutY="165.0" text="WEIGHT:" />
+      <Label fx:id="PatientISFLabel" layoutX="5.0" layoutY="232.0" text="ISF(Insulin Sensitivity Factor):" />
+      <Label fx:id="PatientGSFLabel" layoutX="5.0" layoutY="266.0" prefHeight="17.0" prefWidth="188.0" text="GSF(Glucagon Sensitivity Factor):" />
+      <Label fx:id="TargetBSLLabel" layoutX="7.0" layoutY="301.0" text="Target Blood Sugar Level:" />
+      <TextField fx:id="PatientName" layoutX="64.0" layoutY="65.0" prefHeight="25.0" prefWidth="497.0" promptText="enter your name" />
+      <TextField fx:id="PatientAddress" layoutX="64.0" layoutY="96.0" prefHeight="25.0" prefWidth="497.0" promptText="enter your address" />
+      <TextField fx:id="PatientEmail" layoutX="64.0" layoutY="128.0" prefHeight="25.0" prefWidth="497.0" promptText="enter your email" />
+      <TextField fx:id="PatientWeight" layoutX="64.0" layoutY="161.0" prefHeight="25.0" prefWidth="44.0" promptText="0" />
+      <Label layoutX="116.0" layoutY="165.0" text="kg" />
+      <TextField fx:id="PatientICR" layoutX="193.0" layoutY="192.0" prefHeight="25.0" prefWidth="79.0" promptText="0" />
+      <TextField fx:id="PatientISF" layoutX="193.0" layoutY="228.0" prefHeight="25.0" prefWidth="79.0" promptText="0" />
+      <TextField fx:id="PatientGSF" layoutX="193.0" layoutY="262.0" prefHeight="25.0" prefWidth="79.0" promptText="0" />
+      <TextField fx:id="PatientTargetBSL" layoutX="193.0" layoutY="297.0" prefHeight="25.0" prefWidth="79.0" promptText="0" />
+      <Label fx:id="BatteryLevelLabel" layoutX="7.0" layoutY="339.0" text="BatteryLevel:" />
+      <TextField fx:id="BatteryLevel" layoutX="193.0" layoutY="335.0" prefHeight="25.0" prefWidth="79.0" promptText="0" />
+      <Button fx:id="SimulatetheDetails" layoutX="428.0" layoutY="174.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="133.0" text="Simulate the Details" />
+      <DatePicker fx:id="DateChoice" layoutX="333.0" layoutY="228.0" prefHeight="25.0" prefWidth="88.0" promptText="date" />
+      <ChoiceBox fx:id="modeProvision" layoutX="428.0" layoutY="275.0" prefHeight="25.0" prefWidth="133.0" />
+      <Label layoutX="333.0" layoutY="280.0" text="Mode Select" />
+   </children>
+</AnchorPane>
